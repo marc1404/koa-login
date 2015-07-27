@@ -1,0 +1,16 @@
+{
+  "name": "koa-login",
+  "version": "0.0.1",
+  "description": "Koa login API using JWT",
+  "main": "koa-login.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marc1404/koa-login.git"
+  },
+  "author": "Marc Vornetran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marc1404/koa-login/issues"
+  },
+  "homepage": "https://github.com/marc1404/koa-login#readme"
+}
