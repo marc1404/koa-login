@@ -12,5 +12,9 @@
   "bugs": {
     "url": "https://github.com/marc1404/koa-login/issues"
   },
-  "homepage": "https://github.com/marc1404/koa-login#readme"
+  "homepage": "https://github.com/marc1404/koa-login#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.4",
+    "jsonwebtoken": "^5.0.4"
+  }
 }
