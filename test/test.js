@@ -1,10 +1,14 @@
 var should = require('should');
-var auth = require('../lib/koa-login.js');
+var login = require('../lib/koa-login.js');
 
 describe('koa-auth', function() {
 
     it('invoke factory', function() {
-        auth();
+        var options = {
+            secret: 'shhh'
+        };
+
+        login(options);
     });
 
 });
