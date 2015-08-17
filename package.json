@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/marc1404/koa-login#readme",
   "dependencies": {
-    "bcrypt": "^0.8.4",
+    "bcrypt": "^0.8.5",
     "jsonwebtoken": "^5.0.4"
   },
   "devDependencies": {
