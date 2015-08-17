@@ -46,4 +46,4 @@ $ mocha
 ```
   
 ## License
-**MIT**
+[MIT](https://github.com/marc1404/koa-login/blob/master/LICENSE)
