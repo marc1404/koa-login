@@ -8,6 +8,9 @@
 [![dependencies](https://david-dm.org/marc1404/koa-login.svg)](https://david-dm.org/marc1404/koa-login)
 [![dev-dependencies](https://david-dm.org/marc1404/koa-login/dev-status.svg)](https://david-dm.org/marc1404/koa-login#info=devDependencies)
   
+## Description
+Use in conjunction with [koa-auth-jwt](https://www.npmjs.com/package/koa-auth-jwt).
+  
 ## Installation
 ```
 $ npm install koa-login
