@@ -2,7 +2,7 @@
   "name": "koa-login",
   "version": "0.0.1",
   "description": "Koa login API using JWT",
-  "main": "koa-login.js",
+  "main": "lib/koa-login.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marc1404/koa-login.git"
@@ -16,5 +16,25 @@
   "dependencies": {
     "bcrypt": "^0.8.4",
     "jsonwebtoken": "^5.0.4"
-  }
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5",
+    "should": "^7.0.4"
+  },
+  "scripts": {
+    "test": "node --harmony --harmony_arrow_functions node_modules/istanbul/lib/cli.js cover --hook-run-in-context --report lcovonly node_modules/mocha/bin/_mocha"
+  },
+  "engines": {
+    "node": ">= 0.11.16",
+    "iojs": ">= 1.0.0"
+  },
+  "keywords": [
+    "koa",
+    "auth",
+    "middleware",
+    "jwt",
+    "token",
+    "login"
+  ]
 }
