@@ -15,6 +15,25 @@ $ npm install koa-login
   
 ## Usage
 ```javascript
+var login = require('koa-login');
+var options = {
+  secret: process.env.SECRET,
+  userProvider: name => {
+    return // TODO: find user by name e.g. in database
+  },
+  publicDataProvider: user => {
+    return {
+      name: user.name
+    };
+  },
+  tokenDataProvider: user => {
+    return {
+      id: user.id
+    };
+  }
+};
+
+router.post('/api/login', login(options));
 ```
   
 ## Test
