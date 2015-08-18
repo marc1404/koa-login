@@ -12,7 +12,7 @@
 ## Description
 Use in conjunction with [koa-auth-jwt](https://www.npmjs.com/package/koa-auth-jwt).  
 This middleware can be used to provide a simple login endpoint in [koa](https://www.npmjs.com/package/koa).  
-The [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) package is used to create and sign JSON web tokens (JWT).
+The [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) package is used to create and sign JSON web tokens (JWT).  
 Your login form has to send ```name``` and ```password``` in the request body.
   
 ## Installation
