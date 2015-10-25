@@ -1,6 +1,6 @@
 {
   "name": "koa-login",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Koa login API using JWT",
   "main": "lib/koa-login.js",
   "repository": {

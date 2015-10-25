@@ -26,7 +26,15 @@ var login = require('koa-login');
 var options = {
   secret: process.env.SECRET,
   userProvider: name => {
-    return // TODO: find user by name e.g. in database (using a Promise!)
+    /*
+      The userProvider should find the user by name e.g. in the database.
+      It should return a Promise which resolves to an object containing two properties:
+      {
+        hash: // hash value of the users password,
+        user: // user object itself
+      }
+    */
+    return // TODO
   },
   publicDataProvider: user => {
     return {
@@ -47,7 +55,7 @@ router.post('/api/login', login(options));
 ## Options
 **All options are mandatory!**
 - ```secret``` string which will be used to sign the *jwt*
-- ```userProvider``` **Promise** which takes a name and should return a user object
+- ```userProvider``` function which takes a name and returns a Promise. The Promise should return an object containing two properties: hash & user. Hash is the hashed value of the users password and user the user object itself.
 - ```publicDataProvider``` function which takes the user object and returns an object containing public, unencrypted data which will be sent back to the logged in user
 - ```tokenDataProvider``` function which takes the user object and returns an object containing data which will be encrypted inside the token
 
