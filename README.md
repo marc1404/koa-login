@@ -52,6 +52,9 @@ var options = {
 router.post('/api/login', login(options));
 ```
 
+## Example
+Click [here](https://github.com/marc1404/koa-login/blob/master/examples/usage.js) for an example usage of this package.
+
 ## Options
 **All options are mandatory!**
 - ```secret``` string which will be used to sign the *jwt*
